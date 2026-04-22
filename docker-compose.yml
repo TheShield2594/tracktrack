@@ -2,13 +2,15 @@
 #
 # Portainer usage:
 #   Option A (Repository stack – recommended):
-#     Stacks → Add stack → Repository → point to this repo.
+#     Stacks → Add stack → Repository
+#     Repository URL: https://github.com/theshield2594/tracktrack
+#     Compose path:   docker-compose.yml
 #     Portainer will clone and build automatically.
 #
 #   Option B (Web editor / pre-built image):
 #     Comment out the `build:` block and set:
-#       image: ghcr.io/<your-user>/tracktrack:latest
-#     then `docker push` your image before deploying.
+#       image: ghcr.io/theshield2594/tracktrack:latest
+#     then push the image before deploying.
 #
 # Quick start (local):
 #   docker compose up -d --build
